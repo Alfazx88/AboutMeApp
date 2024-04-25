@@ -60,9 +60,9 @@
 			children = (
 				9595C0C02BD838580091CD70 /* AppDelegate.swift */,
 				9595C0C22BD838580091CD70 /* SceneDelegate.swift */,
+				9595C0C62BD838580091CD70 /* Main.storyboard */,
 				9595C0C42BD838580091CD70 /* LogInViewController.swift */,
 				958733A32BD9B14000FFF80A /* LogedInViewController.swift */,
-				9595C0C62BD838580091CD70 /* Main.storyboard */,
 				9595C0C92BD8385A0091CD70 /* Assets.xcassets */,
 				9595C0CB2BD8385A0091CD70 /* LaunchScreen.storyboard */,
 				9595C0CE2BD8385A0091CD70 /* Info.plist */,

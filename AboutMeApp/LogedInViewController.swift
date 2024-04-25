@@ -7,8 +7,16 @@
 
 import UIKit
 
-class LogedInViewController: UIViewController {
+final class LogedInViewController: UIViewController {
+    
+    @IBOutlet var welcomeLabel: UILabel!
+    
+    var username: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        welcomeLabel.text = "Welcome, \(username!)!"
     }
+     
+    
 }
