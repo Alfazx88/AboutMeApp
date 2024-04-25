@@ -16,7 +16,7 @@ final class LogInViewController: UIViewController {
     private let userName: String = "1"
     private let password: String = "1"
 
-    // MARK: - Segue control
+    // MARK: - Segue control, keyboard handling
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let loggedVC = segue.destination as? LogedInViewController
         loggedVC?.username = userName
@@ -26,30 +26,40 @@ final class LogInViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    
-    
     // MARK: - IB Actions
     @IBAction func logInButtonTapped(_ sender: UIButton) {
         if userNameTF.text != userName || passwordTF.text != password {
             showAlert(
                 withTitle: "Wrong login/password",
-                andMessage: "Please enter your name")
+                andMessage: "Please enter your name"
+            )
             return
         }
+        userNameTF.text = nil
+        passwordTF.text = nil
     }
     
     @IBAction func forgotUserNameButtonTapped() {
         showAlert(
             withTitle: "No worries",
-            andMessage: "Login is '1' 👀")
+            andMessage: "Login is '1' 👀"
+        )
         return
     }
     
     @IBAction func forgotPasswordButtonTapped() {
         showAlert(
             withTitle: "No worries",
-            andMessage: "Password is '1' 👀")
+            andMessage: "Password is '1' 👀"
+        )
         return
+    }
+    
+    @IBAction func unwind(
+        for unwindSegue: LogedInViewController,
+        towards subsequentVC: LogInViewController) {
+            userNameTF.text = nil
+            passwordTF.text = nil
     }
     
     
