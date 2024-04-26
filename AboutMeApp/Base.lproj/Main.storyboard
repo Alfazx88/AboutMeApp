@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -14,24 +14,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="rCp-6y-7YY">
-                                <rect key="frame" x="36.333333333333343" y="324.66666666666669" width="320.66666666666663" height="202.66666666666669"/>
+                                <rect key="frame" x="16" y="364.66666666666669" width="398" height="202.66666666666669"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jNW-Az-dZ9">
-                                        <rect key="frame" x="0.0" y="0.0" width="320.66666666666669" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vb9-5r-0xU">
-                                        <rect key="frame" x="0.0" y="58" width="320.66666666666669" height="34"/>
+                                        <rect key="frame" x="0.0" y="58" width="398" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZl-Gf-ADT">
-                                        <rect key="frame" x="0.0" y="115.99999999999999" width="320.66666666666669" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="115.99999999999999" width="398" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
@@ -39,11 +39,11 @@
                                             <segue destination="bX7-1u-htt" kind="presentation" modalPresentationStyle="fullScreen" id="eBF-WD-CtA"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="O5r-hM-fiu">
-                                        <rect key="frame" x="0.0" y="174.33333333333331" width="320.66666666666669" height="28.333333333333343"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="O5r-hM-fiu">
+                                        <rect key="frame" x="0.0" y="174.33333333333331" width="398" height="28.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-wz-68S">
-                                                <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="28.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="28.333333333333332"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
@@ -53,7 +53,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYT-iS-ZD2">
-                                                <rect key="frame" x="195.66666666666663" y="0.0" width="125" height="28.333333333333332"/>
+                                                <rect key="frame" x="212.66666666666663" y="0.0" width="185.33333333333337" height="28.333333333333332"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
@@ -71,7 +71,9 @@
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rCp-6y-7YY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0JD-rd-Lbk"/>
+                            <constraint firstAttribute="trailing" secondItem="rCp-6y-7YY" secondAttribute="trailing" constant="16" id="SZM-KC-j8W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="rCp-6y-7YY" secondAttribute="bottomMargin" multiplier="9:16" id="jen-06-0yE"/>
+                            <constraint firstItem="rCp-6y-7YY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="khD-5C-d9m"/>
                         </constraints>
                     </view>
                     <connections>
@@ -88,17 +90,17 @@
             <objects>
                 <viewController id="bX7-1u-htt" customClass="LogedInViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fsF-tc-0Kq" customClass="Loge">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK7-28-WuO">
-                                <rect key="frame" x="168.66666666666666" y="394.66666666666669" width="56" height="63"/>
+                                <rect key="frame" x="187" y="434.66666666666669" width="56" height="63"/>
                                 <fontDescription key="fontDescription" name=".AppleColorEmojiUI" family=".Apple Color Emoji UI" pointSize="56"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iU-Iu-9o5">
-                                <rect key="frame" x="136.33333333333334" y="636.33333333333337" width="120.66666666666666" height="47.666666666666629"/>
+                                <rect key="frame" x="154.66666666666666" y="696.66666666666663" width="120.99999999999997" height="47.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
@@ -108,7 +110,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81j-NU-hTJ">
-                                <rect key="frame" x="128" y="99" width="137" height="41"/>
+                                <rect key="frame" x="146.66666666666666" y="99" width="136.99999999999997" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

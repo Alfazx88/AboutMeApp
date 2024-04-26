@@ -18,8 +18,8 @@ final class LogInViewController: UIViewController {
 
     // MARK: - Segue control, keyboard handling
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let loggedVC = segue.destination as? LogedInViewController
-        loggedVC?.username = userName
+        guard let loggedVC = segue.destination as? LogedInViewController else { return }
+        loggedVC.username = userName
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
