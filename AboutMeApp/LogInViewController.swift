@@ -35,14 +35,13 @@ final class LogInViewController: UIViewController {
             )
             return
         }
-        userNameTF.text = nil
         passwordTF.text = nil
     }
     
     @IBAction func forgotUserNameButtonTapped() {
         showAlert(
             withTitle: "No worries",
-            andMessage: "Login is '1' 👀"
+            andMessage: "Login is \(userName). 🤠"
         )
         return
     }
@@ -50,7 +49,7 @@ final class LogInViewController: UIViewController {
     @IBAction func forgotPasswordButtonTapped() {
         showAlert(
             withTitle: "No worries",
-            andMessage: "Password is '1' 👀"
+            andMessage: "Password is \(password). 🙄"
         )
         return
     }
