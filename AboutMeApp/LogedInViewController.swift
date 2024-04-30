@@ -18,11 +18,6 @@ final class LogedInViewController: UIViewController {
         welcomeLabel.text = "Welcome, \(username!)!"
         setupGradientBackground()
     }
-     
-    @IBAction func logOutButtonTapped() {
-        dismiss(animated: true)
-    }
-    
     
     private func setupGradientBackground() {        // чтобы установить градиент - столько кода?🤷‍♂️
           let gradientLayer = CAGradientLayer()
