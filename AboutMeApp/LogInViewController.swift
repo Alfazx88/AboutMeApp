@@ -13,8 +13,8 @@ final class LogInViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Username, password
-    private let userName: String = "1"
-    private let password: String = "1"
+    private let userName = "1"
+    private let password = "1"
 
     // MARK: - Segue control, keyboard handling
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -23,11 +23,11 @@ final class LogInViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
 
     // MARK: - IB Actions
-    @IBAction func logInButtonTapped(_ sender: UIButton) {
+    @IBAction func logInButtonTapped() {
         if userNameTF.text != userName || passwordTF.text != password {
             showAlert(
                 withTitle: "Wrong login/password",
@@ -54,11 +54,9 @@ final class LogInViewController: UIViewController {
         return
     }
     
-    @IBAction func unwind(
-        for unwindSegue: LogedInViewController,
-        towards subsequentVC: LogInViewController) {
-            userNameTF.text = nil
-            passwordTF.text = nil
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+            userNameTF.text = ""
+            passwordTF.text = ""
     }
     
     
@@ -67,7 +65,8 @@ final class LogInViewController: UIViewController {
     // MARK: - Private Methods
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in      self.passwordTF.text = ""
+        let okAction = UIAlertAction(title: "OK", style: .default) {
+            _ in self.passwordTF.text = ""
         }
         alert.addAction(okAction)
         present(alert, animated: true)
