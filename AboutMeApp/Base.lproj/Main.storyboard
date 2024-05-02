@@ -35,8 +35,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="c49-il-nY3"/>
-                                            <segue destination="bX7-1u-htt" kind="presentation" modalPresentationStyle="fullScreen" id="wbF-zZ-BHW"/>
+                                            <segue destination="bX7-1u-htt" kind="presentation" modalPresentationStyle="fullScreen" id="qzE-mY-xHe"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="O5r-hM-fiu">
@@ -49,17 +48,17 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotUserNameButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWK-WN-vg2"/>
+                                                    <action selector="remindButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cut-wS-NBR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYT-iS-ZD2">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYT-iS-ZD2">
                                                 <rect key="frame" x="212.66666666666663" y="0.0" width="185.33333333333337" height="28.333333333333332"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="WzY-8J-dWC"/>
+                                                    <action selector="remindButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNk-NZ-T6w"/>
                                                 </connections>
                                             </button>
                                         </subviews>
