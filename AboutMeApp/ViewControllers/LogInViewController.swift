@@ -11,14 +11,17 @@ final class LogInViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
+    @IBOutlet var userProperty: UILabel!
     
-    // MARK: - Username, password
+    // MARK: - user init, username, password
+    let user = User.getUserData()
     private let userName = "User"
     private let password = "Password"
 
     // MARK: - Initial View Setup
     override func viewDidLoad() {
         super.viewDidLoad()
+        userProperty.text = user.email
         userNameTF.text = "User"
         passwordTF.text = "Password"
     }
@@ -37,8 +40,15 @@ final class LogInViewController: UIViewController {
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loggedVC = segue.destination as? LogedInViewController else { return }
-        loggedVC.username = userName
+        let tabBarController = segue.destination as? UITabBarController
+        tabBarController?.viewControllers?.forEach({ ViewController in
+            if let LogedInVC = ViewController as? LogedInViewController {
+                LogedInVC.user = user
+            } else if let navigationVC = ViewController as? UINavigationController {
+                let personVC = navigationVC.topViewController as? PersonViewController
+                personVC?.user = user
+            }
+        })
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -56,6 +66,10 @@ final class LogInViewController: UIViewController {
             userNameTF.text = ""
             passwordTF.text = ""
     }
+    
+    
+    
+    
     
     
     
