@@ -11,7 +11,6 @@ final class LogInViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
-    @IBOutlet var userProperty: UILabel!
     
     // MARK: - user init, username, password
     let user = User.getUserData()
@@ -21,7 +20,6 @@ final class LogInViewController: UIViewController {
     // MARK: - Initial View Setup
     override func viewDidLoad() {
         super.viewDidLoad()
-        userProperty.text = user.email
         userNameTF.text = "User"
         passwordTF.text = "Password"
     }

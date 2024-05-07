@@ -5,7 +5,7 @@
 //  Created by Giovanni on 03.05.2024.
 //
 
-import Foundation
+import UIKit
 
 struct User {
     let login: String
@@ -17,7 +17,8 @@ struct User {
         let person = Person(
             name: "Nikolay",
             familyName: "Drozdov",
-            age: 86,
+            foto: UIImage.init(named: "Drozdov"),
+            age: "86",
             residence: "Russia",
             profession: "Naturalist",
             organiation: "Moscow State University",
@@ -34,7 +35,8 @@ struct User {
 struct Person {
     let name: String?
     let familyName: String?
-    var age: Int? = 0
+    var foto: UIImage?
+    var age: String?
     var residence: String?
     var profession: String?
     var organiation: String?
