@@ -10,10 +10,11 @@ import UIKit
 final class BiografyViewController: UIViewController {
     var user: User?
 
+    @IBOutlet var bioTitleLabel: UILabel!
     @IBOutlet var userBiografyLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Biografy"
+        bioTitleLabel.text = "\(user?.person.name ?? "") \(user?.person.familyName ?? "") Bio"
         userBiografyLabel.text = user?.person.bio
 
         // Do any additional setup after loading the view.

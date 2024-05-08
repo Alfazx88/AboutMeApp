@@ -24,7 +24,7 @@ final class TabBarViewController: UITabBarController {
     private func setupGradientBackground() {
         let gradientLayer = CAGradientLayer()
         
-        gradientLayer.colors = [UIColor.systemPink.cgColor, UIColor.yellow.cgColor]
+        gradientLayer.colors = [UIColor.systemMint.cgColor, UIColor.yellow.cgColor]
         gradientLayer.locations = [0.0, 1.0]
         
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)

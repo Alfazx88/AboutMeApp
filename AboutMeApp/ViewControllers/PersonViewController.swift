@@ -27,7 +27,7 @@ final class PersonViewController: UIViewController {
         ageLabel.text = user?.person.age
         professionLabel.text = user?.person.profession
         organizationLabel.text = user?.person.organiation
-        personImage.layer.cornerRadius = 50
+        personImage.layer.cornerRadius = personImage.bounds.height / 2
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

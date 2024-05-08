@@ -17,7 +17,7 @@ struct User {
         let person = Person(
             name: "Nikolay",
             familyName: "Drozdov",
-            foto: UIImage.init(named: "Drozdov"),
+            foto: UIImage.init(named: "ndrozdov"),
             age: "86",
             residence: "Russia",
             profession: "Naturalist",
